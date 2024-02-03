@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1015822500498",
+    "project_id": "rozewail-8edf7",
+    "storage_bucket": "rozewail-8edf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015822500498:android:da8c83b24e734b75fe9c4b",
+        "android_client_info": {
+          "package_name": "at.rozewail.rozewailapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015822500498-mcppeelje8pquii7qpl7tessrhtk9sp0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "at.rozewail.rozewailapp",
+            "certificate_hash": "eca18cc10d5d5aa6296d7e82f24c2e6989080e1f"
+          }
+        },
+        {
+          "client_id": "1015822500498-72bqs79a5c8nrpvtl3ob8grv220ac19n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0o0iIArMuY-_HN09TuBW38XrpbyVqCk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015822500498-72bqs79a5c8nrpvtl3ob8grv220ac19n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
