@@ -135,7 +135,7 @@ class postRepoim implements postrepo {
         queryParameters: {
           "app_group_id": groupId,
         },
-        url: "$baseurl/student/storePost?token=${prefs!.getString("token")}",
+        url: "$baseurl/student",
         data: {
           'book_id': bookName,
           'book_page': bookPage,
@@ -208,7 +208,7 @@ class postRepoim implements postrepo {
 
           "post_id": postid
         },
-        url: "$baseurl/student/updatePost?token=${prefs!.getString("token")}",
+        url: "$baseurl/studen",
         data: {
           'book_id': bookName,
           'book_page': bookPage,
@@ -235,7 +235,7 @@ class postRepoim implements postrepo {
           queryParameters: {
             "app_group_id": groupid,
           },
-          url: "$baseurl/student/storePost?token=${prefs!.getString("token")}",
+          url: "$baseurl/stude",
           data: {
             'book_id': bookName,
             'book_page': bookPage,
@@ -276,7 +276,7 @@ class postRepoim implements postrepo {
     try {
       var jsonData = await Apiser.getdio(
           url:
-              "$baseurl/student/getBooks?app_group_id=$gid?&token=${prefs!.getString("token")}");
+              "$baseurl/student/getBooks");
 
       final BooksModel booksmodel = BooksModel.fromJson(jsonData);
 
@@ -302,7 +302,7 @@ class postRepoim implements postrepo {
         'image': await MultipartFile.fromFile(imageFile!.path),
       });
       var jsonData = await Apiser.postdiofromdata(
-        url: "$baseurl/student/storeComment?token=${prefs!.getString("token")}",
+        url: "$baseurl/student/",
         data: formData,
       );
 
@@ -322,7 +322,7 @@ class postRepoim implements postrepo {
       var request = http.MultipartRequest(
         'POST',
         Uri.parse(
-            "$baseurl/student/storeComment?token=${prefs!.getString("token")}"),
+            "$baseurl/student/"),
       );
       request.fields.addAll({
         'post_id': postid.toString(),
@@ -347,7 +347,7 @@ class postRepoim implements postrepo {
       /* var jsonData = await Apiser.postdio(
           queryParameters: {'post_id': postid},
           url:
-              "$baseurl/student/storeComment?token=${prefs!.getString("token")}",
+              "$baseurl/student/",
           data: {
             'content': content,
           });*/
@@ -365,7 +365,7 @@ class postRepoim implements postrepo {
         queryParameters: {
           'post_id': postid,
         },
-        url: "$baseurl/student/storeComment?token=${prefs!.getString("token")}",
+        url: "$baseurl/student/",
         data: {
           'content': content,
         },
@@ -386,7 +386,7 @@ class postRepoim implements postrepo {
       var request = http.MultipartRequest(
         'POST',
         Uri.parse(
-            "$baseurl/student/storeComment?token=${prefs!.getString("token")}"),
+            "$baseurl/student"),
       );
       request.fields.addAll({
         'post_id': postid.toString(),
@@ -414,7 +414,7 @@ class postRepoim implements postrepo {
       var jsonData = await Apiser.getdio(
           queryParameters: {},
           url:
-              "$baseurl/student/getPost?post_id=$postid&token=${prefs!.getString("token")}");
+              "$baseurl/student/}");
 
       final PostdataModel post = PostdataModel.fromJson(jsonData);
 
@@ -434,7 +434,7 @@ class postRepoim implements postrepo {
     try {
       var jsonData = await Apiser.getdio(
         url:
-            "$baseurl/student/deletePost?post_id=$postid&token=${prefs!.getString("token")}",
+            "$baseurl/student/",
       );
     } catch (e) {
       print(e.toString());
@@ -445,7 +445,7 @@ class postRepoim implements postrepo {
     try {
       var jsonData = await Apiser.getdio(
         url:
-            "$baseurl/student/deleteComment?comment_id=$commentid&token=${prefs!.getString("token")}",
+            "$baseurl/student",
       );
     } catch (e) {
       print(e.toString());
