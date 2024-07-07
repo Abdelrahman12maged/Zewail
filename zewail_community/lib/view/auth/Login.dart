@@ -79,7 +79,7 @@ class _LoginState extends State<Login> {
     try {
       var response = await Api().post(
         url:
-            "$baseurl/student/updateDeviceToken?token=${prefs!.getString("token")}",
+            "$baseur",
         body: {
           "device_token": fcmtoken,
         },
