@@ -49,7 +49,7 @@ class _MyWebViewState extends State<MyWebView> {
         ),
       )
       ..loadRequest(Uri.parse(
-          'https://rozewail.com/student/loginFromApp?stid=${prefs!.getInt("stid")}&hash=${prefs!.getString("pass")}'));
+          'https://rozewail'));
   }
 
   @override
