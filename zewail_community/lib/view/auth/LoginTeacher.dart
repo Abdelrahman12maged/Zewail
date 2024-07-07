@@ -77,7 +77,7 @@ class _LoginTeacherState extends State<LoginTeacher> {
     try {
       var response = await Api().post(
         url:
-            "$baseurl/student/updateDeviceToken?token=${prefs!.getString("token")}",
+            "$baseurl/student/",
         body: {
           "device_token": fcmtoken,
         },
