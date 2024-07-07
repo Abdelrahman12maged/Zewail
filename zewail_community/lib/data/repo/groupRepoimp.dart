@@ -56,7 +56,7 @@ class groupRepoim implements gruouprepo {
       fetchAllgroupsTeacher() async {
     try {
       String url =
-          "$baseurl/teacher/getGroups?token=${prefs!.getString("token")}";
+          "$baseurl/teacher/";
       var jsonData = await Apiser.getdio(url: url);
       final List<GroupTeacherModel> groups = [];
 
@@ -82,7 +82,7 @@ class groupRepoim implements gruouprepo {
     try {
       var jsonData = await Apiser.getdio(
           url:
-              "$baseurl/student/unreadNotificationCount?token=${prefs!.getString("token")}");
+              "$baseurl/student/");
 
       int? unread = jsonData['count'];
       return right(unread);
@@ -99,7 +99,7 @@ class groupRepoim implements gruouprepo {
     try {
       var jsonData = await Apiser.getdio(
           url:
-              "$baseurl/student/getNotifications?token=${prefs!.getString("token")}");
+              "$baseurl/student/");
 
       final notificationModel notifs = notificationModel.fromJson(jsonData);
       //   print(jsonData);
