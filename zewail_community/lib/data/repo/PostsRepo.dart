@@ -17,19 +17,12 @@ abstract class postrepo {
       int stid, int currentPage);
   Future<Either<failure, PostdataModel>> addPost(int bookName, String bookPage,
       String questionNo, String content, int groupid, File? imageFile);
-  Future<Either<failure, PostdataModel>> addPostWithoutImage(
-    int bookName,
-    String bookPage,
-    String questionNo,
-    String content,
-    int groupId,
-  );
+
   Future<Either<failure, UserModel>> fetchUser();
   Future<Either<failure, BooksModel>> fetchBooks(int gid);
   Future<Either<failure, PostdataModel>> addComment(
       int postid, String content, File? imageFile);
-  Future<Either<failure, PostdataModel>> addCommentWithoutimage(
-      int postid, String content);
+
   Future<void> addRecord(int postid, File? record);
   Future<Either<failure, PostdataModel>> fetchpostData(
     int postid,
@@ -45,12 +38,5 @@ abstract class postrepo {
     int postid,
     File? imageFile,
   );
-  Future<void> updatePostWithoutImage(
-    int bookName,
-    String bookPage,
-    String questionNo,
-    String content,
-    //   int groupid,
-    int postid,
-  );
+ 
 }
