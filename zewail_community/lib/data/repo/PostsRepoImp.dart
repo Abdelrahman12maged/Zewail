@@ -85,7 +85,7 @@ class postRepoim implements postrepo {
         'image': await MultipartFile.fromFile(imageFile!.path),
       });
       var jsonData = await Apiser.postdiofromdata(
-        url: "$baseurl/student/storePost?token=${prefs!.getString("token")}",
+        url: "$baseurl/student/storePost",
         data: formData,
       );
 
@@ -123,36 +123,7 @@ class postRepoim implements postrepo {
     }
   }
 
-  Future<Either<failure, PostdataModel>> addPostWithoutImage(
-    int bookName,
-    String bookPage,
-    String questionNo,
-    String content,
-    int groupId,
-  ) async {
-    try {
-      var jsonData = await Apiser.postdio(
-        queryParameters: {
-          "app_group_id": groupId,
-        },
-        url: "$baseurl/student",
-        data: {
-          'book_id': bookName,
-          'book_page': bookPage,
-          'question_no': questionNo,
-          'content': content,
-        },
-      );
-      var postModel = PostdataModel.fromJson(jsonData);
-
-      return right(postModel);
-    } catch (e) {
-      if (e is DioException) {
-        return left(serverFailure.fromDioerro(e));
-      }
-      return left(serverFailure(e.toString()));
-    }
-  }
+  
 
   Future<void> updatePost(
     int bookName,
@@ -168,7 +139,7 @@ class postRepoim implements postrepo {
       final request = http.MultipartRequest(
         'POST',
         Uri.parse(
-            '$baseurl/student/updatePost?token=${prefs!.getString("token")}'),
+            '$baseurl/student/updatePost}'),
       );
       request.fields['book_id'] = bookName.toString();
       request.fields['book_page'] = bookPage;
@@ -193,34 +164,7 @@ class postRepoim implements postrepo {
     }
   }
 
-  Future<void> updatePostWithoutImage(
-    int bookName,
-    String bookPage,
-    String questionNo,
-    String content,
-    //  int groupid,
-    int postid,
-  ) async {
-    try {
-      var jsonData = await Apiser.postdio(
-        queryParameters: {
-          //"app_group_id": groupid,
-
-          "post_id": postid
-        },
-        url: "$baseurl/studen",
-        data: {
-          'book_id': bookName,
-          'book_page': bookPage,
-          'question_no': questionNo,
-          'content': content,
-        },
-      );
-    } catch (e) {
-      print(e.toString());
-    }
-  }
-  // Rest of the code...
+ 
 
   /* Future<void> addPost(
     int bookName,
@@ -255,7 +199,7 @@ class postRepoim implements postrepo {
     try {
       var jsonData = await Apiser.getdio(
           url:
-              "$baseurl/student/getStudent?&token=${prefs!.getString("token")}");
+              "$baseurl/student/getStudent");
 
       //  var userdata = jsonData['data']['student'];
 
@@ -358,28 +302,7 @@ class postRepoim implements postrepo {
     throw Exception('Unexpected error occurred');
   }*/
 
-  Future<Either<failure, PostdataModel>> addCommentWithoutimage(
-      int postid, String content) async {
-    try {
-      var jsonData = await Apiser.postdio(
-        queryParameters: {
-          'post_id': postid,
-        },
-        url: "$baseurl/student/",
-        data: {
-          'content': content,
-        },
-      );
-
-      var postModel = PostdataModel.fromJson(jsonData);
-      return right(postModel);
-    } catch (e) {
-      if (e is DioException) {
-        return left(serverFailure.fromDioerro(e));
-      }
-      return left(serverFailure(e.toString()));
-    }
-  }
+ 
 
   Future<void> addRecord(int postid, File? record) async {
     try {
