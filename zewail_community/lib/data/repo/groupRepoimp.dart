@@ -26,7 +26,7 @@ class groupRepoim implements gruouprepo {
   Future<Either<failure, List<GroupModel>>> fetchAllgroups() async {
     try {
       String url =
-          "$baseurl/student/getGroups?token=${prefs!.getString("token")}";
+          "$baseurl/student/getGroups";
 
       var jsonData = await Apiser.getdio(url: url);
 
