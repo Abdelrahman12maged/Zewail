@@ -53,7 +53,7 @@ class postRepoim implements postrepo {
     try {
       var jsonData = await Apiser.getdio(queryParameters: {
         'page': currentPage
-      }, url: "$baseurl/student/getStudentPosts?st_id=$stid&token=${prefs!.getString("token")}");
+      }, url: "$baseurl/student/");
 
       final List<PostsModel> stposts = [];
       print(jsonData["data"]['groups']["data"]);
