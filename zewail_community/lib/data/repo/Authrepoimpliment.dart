@@ -23,7 +23,7 @@ class AuthRepoim implements authrepo {
   Future<Either<failure, bool?>> checkStudentExist(String numberSt) async {
     try {
       var jsonData = await Apiser.getdio(
-          url: "$baseurl/check-st-mobile?st_mobile=$numberSt");
+          url: "$baseurl");
 
       bool? isExist = jsonData['isExist'];
       return right(isExist);
@@ -124,7 +124,7 @@ class AuthRepoim implements authrepo {
     try {
       var response = await Apiser.postdio(
         url:
-            "$baseurl/student/updateDeviceToken?token=${prefs!.getString("token")}",
+            "$baseurl/student/",
         data: {
           "device_token": fcmtoken,
         },
