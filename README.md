@@ -21,7 +21,7 @@ To manage the application's state and synchronize changes in the UI based on spe
 shared_preferences:
 To store information likes groups that need to be saved even after the app is closed.
 
-dio: ^5.2.1+1
+dio: 
 To perform network requests to communicate with servers and retrieve or send data.
 
 
