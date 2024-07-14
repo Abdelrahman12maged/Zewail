@@ -1,3 +1,18 @@
+
+
+
+![WhatsApp Image 2024-07-14 at 2 34 28 PM (1)](https://github.com/user-attachments/assets/983ed122-e6da-4c72-932a-df8d9723eb66)
+![WhatsApp Image 2024-07-14 at 2 34 28 PM (2)](https://github.com/user-attachments/assets/c51b493b-b89f-4e11-9435-f1f1273ad45b)
+![WhatsApp Image 2024-07-14 at 2 34 28 PM](https://github.com/user-attachments/assets/488003ae-216f-4b36-9334-ceb6f1c01148)
+![WhatsApp Image 2024-07-14 at 2 34 27 PM (1)](https://github.com/user-attachments/assets/8bcbda23-cd8f-4529-a17b-48e1fff24205)
+
+
+
+google play link:  https://play.google.com/store/apps/details?id=at.rozewail.rozewailapp
+
+![WhatsApp Image 2024-07-14 at 2 34 29 PM](https://github.com/user-attachments/assets/4400eaea-b1f4-422b-a8cf-f33c9ab15f45)
+
+
 Rozewell is an application developed using Flutter for communication between students and teachers at an educational center. It consists of groups for the subjects in which the student is enrolled. Students can post questions in each group, and these can be answered by other students and the teacher responsible for the group.
 
 Libraries Used in the Application:
@@ -36,11 +51,5 @@ Interaction: Other students and the teacher responsible for the group can reply 
 Using these libraries, effective communication between students and teachers can be achieved, providing a seamless user experience with advanced features such as real-time notifications and multimedia support.
 
 
-![WhatsApp Image 2024-07-14 at 2 34 28 PM (2)](https://github.com/user-attachments/assets/76e54541-aa32-4c83-a709-3c52b5173bad)
-![WhatsApp Image 2024-07-14 at 2 34 27 PM (1)](https://github.com/user-attachments/assets/d318a764-f368-4919-846a-262e2f25e17e)
-![WhatsApp Image 2024-07-14 at 2 34 28 PM](https://github.com/user-attachments/assets/4969d0a7-3123-4370-bb77-979ac926304a)
-![WhatsApp Image 2024-07-14 at 2 34 28 PM (1)](https://github.com/user-attachments/assets/b41cd1a5-3c3c-4a27-9c74-7454d880def5)
 
-google play link:  https://play.google.com/store/apps/details?id=at.rozewail.rozewailapp
 
-![WhatsApp Image 2024-07-14 at 2 34 29 PM](https://github.com/user-attachments/assets/4400eaea-b1f4-422b-a8cf-f33c9ab15f45)
